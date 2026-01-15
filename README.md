@@ -81,6 +81,34 @@ vim.cmd([[colorscheme nerv]])
 
 See [neovim-theme/README.md](neovim-theme/README.md) for more details and plugin integration.
 
+### Emacs
+
+**Using `straight.el`:**
+
+```elisp
+(use-package nerv-theme
+  :straight (:host github :repo "wongmjane/nerv-theme"
+             :files ("emacs-extension/nerv-theme.el"))
+  :config
+  (load-theme 'nerv t))
+```
+
+**Manual Installation:**
+
+```bash
+# Copy the theme to your Emacs themes directory
+mkdir -p ~/.emacs.d/themes
+cp emacs-extension/nerv-theme.el ~/.emacs.d/themes/
+```
+
+Then add to your `init.el`:
+```elisp
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+(load-theme 'nerv t)
+```
+
+See [emacs-extension/README.md](emacs-extension/README.md) for more installation options.
+
 ## Color Palette
 
 | Role | Hex |
