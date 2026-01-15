@@ -32,7 +32,7 @@ Install from [VS Code Marketplace](https://marketplace.visualstudio.com/items?it
 3. Search for "NERV Theme"
 4. Click Install
 5. Open Command Palette (`Cmd+Shift+P` / `Ctrl+Shift+P`)
-6. Select "Preferences: Color Theme" → "NERV"
+6. Select "Preferences: Color Theme" → "NERV" or "NERV (flat)"
 
 ### Zed
 
@@ -46,9 +46,10 @@ Install from [VS Code Marketplace](https://marketplace.visualstudio.com/items?it
 # Copy the theme to your Zed themes directory
 mkdir -p ~/.config/zed/themes
 cp zed-extension/themes/nerv.json ~/.config/zed/themes/
+cp zed-extension/themes/nerv-flat.json ~/.config/zed/themes/
 ```
 
-Then open Command Palette and select "theme: Select Theme" → "NERV".
+Then open Command Palette and select "theme: Select Theme" → "NERV" or "NERV (flat)".
 
 ### Neovim
 
@@ -62,6 +63,8 @@ Then open Command Palette and select "theme: Select Theme" → "NERV".
   priority = 1000,
   config = function()
     vim.cmd([[colorscheme nerv]])
+    -- or
+    -- vim.cmd([[colorscheme nerv-flat]])
   end,
 }
 ```
@@ -72,11 +75,14 @@ Then open Command Palette and select "theme: Select Theme" → "NERV".
 # Copy the theme to your Neovim colors directory
 mkdir -p ~/.config/nvim/colors
 cp neovim-theme/colors/nerv.lua ~/.config/nvim/colors/
+cp neovim-theme/colors/nerv-flat.lua ~/.config/nvim/colors/
 ```
 
 Then add to your `init.lua`:
 ```lua
 vim.cmd([[colorscheme nerv]])
+-- or
+vim.cmd([[colorscheme nerv-flat]])
 ```
 
 See [neovim-theme/README.md](neovim-theme/README.md) for more details and plugin integration.
