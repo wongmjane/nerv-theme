@@ -5,6 +5,10 @@
 A dark editor theme inspired by 80s/90s cyberpunk interfaces, Evangelion's NERV headquarters, and the green-tinted cinematography of Wong Kar-wai. Industrial control terminals meet the melancholic warmth of *In the Mood for Love*.
 
 ![NERV Theme](screenshot.png)
+*Standard Version*
+
+![NERV (flat) Theme](screenshot-flat.png)
+*Flat Variation*
 
 ## The Aesthetic
 
