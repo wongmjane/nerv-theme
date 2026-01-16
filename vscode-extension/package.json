@@ -30,6 +30,11 @@
         "label": "NERV",
         "uiTheme": "vs-dark",
         "path": "./themes/nerv-color-theme.json"
+      },
+      {
+        "label": "NERV (flat)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/nerv-flat-color-theme.json"
       }
     ]
   },

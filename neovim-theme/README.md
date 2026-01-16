@@ -16,6 +16,11 @@ Deep oceanic greens meet warning-sign orange. Phosphor glow on aging CRT monitor
 - **Types**: Industrial teal (`#3a7a8c`) — structural, foundational
 - **Strings**: Organic green (`#4a8c5c`) — data in motion
 
+## Variations
+
+- **NERV**: The standard theme with subtle borders and depth.
+- **NERV (flat)**: A flattened variation with borders blending into the background for a seamless look.
+
 ## Features
 
 - Full TreeSitter support
@@ -82,11 +87,14 @@ colorscheme nerv
    ```bash
    mkdir -p ~/.config/nvim/colors
    cp neovim-theme/colors/nerv.lua ~/.config/nvim/colors/
+   cp neovim-theme/colors/nerv-flat.lua ~/.config/nvim/colors/
    ```
 
 3. Add to your `init.lua`:
    ```lua
    vim.cmd([[colorscheme nerv]])
+   -- or
+   vim.cmd([[colorscheme nerv-flat]])
    ```
 
    Or in `init.vim`:
